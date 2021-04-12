@@ -101,41 +101,41 @@ public class FastDFSClient {
     }
 
 // test
-//    public static void main(String[] args) throws IOException, MyException {
-//        // 172.16.235.2:8080/group1/M00/00/00/rBDrAmBA3M2AectpAAO1WLzWet8743.jpg
-//
-////        // 获取文件信息
-////        FileInfo fileInfo = getFile("group1", "M00/00/00/rBDrAmBA3M2AectpAAO1WLzWet8743.jpg");
-////        System.out.println("fileInfo: " + fileInfo);
-//
-////        // 下载文件
-////        InputStream is = downFile("group1", "M00/00/00/rBDrAmBA3M2AectpAAO1WLzWet8743.jpg");
-////        FileOutputStream fos = new FileOutputStream("/Users/JC/Desktop/test/3.jpg");
-////        byte[] buffer = new byte[1024];
-////        int len = 0;
-////        while ((len = is.read(buffer)) != -1) {
-////            fos.write(buffer, 0, len);
-////        }
-////        // 将缓冲区buffer中的数据都写入到目的地
-////        fos.flush();
-////        fos.close();
-////        is.close();
-//
-////        // 删除文件
-////        // 172.16.235.2:8080/group1/M00/00/00/rBDrAmBA3amAWSy3AAC76iwXAHU331.jpg
-////        deleteFile("group1", "M00/00/00/rBDrAmBA3amAWSy3AAC76iwXAHU331.jpg");
-//
-////        // 通过组名获取组信息  0
-////        StorageServer group1 = getStorages("group1");
-////        System.out.println(group1.getStorePathIndex());
-//
-////        // 根据文件组名和文件存储路径获取Storage服务的IP、端口信息
-////        ServerInfo[] serverInfo = getServerInfo("group1", "M00/00/00/rBDrAmBA3M2AectpAAO1WLzWet8743.jpg");
-////        for (ServerInfo info : serverInfo) {
-////            System.out.println(info.getIpAddr() + ": " + info.getPort()); // 172.16.235.2: 23000
-////        }
-//
-////        // 获取Tracker服务地址
-////        System.out.println(getTrackerUrl()); // 172.16.235.2:8080
-//    }
+    public static void main(String[] args) throws IOException, MyException {
+        // 172.16.235.2:8080/group1/M00/00/00/rBDrAmBA3M2AectpAAO1WLzWet8743.jpg
+
+//        // 获取文件信息
+//        FileInfo fileInfo = getFile("group1", "M00/00/00/rBDrAmBA3M2AectpAAO1WLzWet8743.jpg");
+//        System.out.println("fileInfo: " + fileInfo);
+
+//        // 下载文件
+//        InputStream is = downFile("group1", "M00/00/00/rBDrAmBA3M2AectpAAO1WLzWet8743.jpg");
+//        FileOutputStream fos = new FileOutputStream("/Users/JC/Desktop/test/3.jpg");
+//        byte[] buffer = new byte[1024];
+//        int len = 0;
+//        while ((len = is.read(buffer)) != -1) {
+//            fos.write(buffer, 0, len);
+//        }
+//        // 将缓冲区buffer中的数据都写入到目的地
+//        fos.flush();
+//        fos.close();
+//        is.close();
+
+//        // 删除文件
+//        // 172.16.235.2:8080/group1/M00/00/00/rBDrAmBA3amAWSy3AAC76iwXAHU331.jpg
+//        deleteFile("group1", "M00/00/00/rBDrAmBA3amAWSy3AAC76iwXAHU331.jpg");
+
+//        // 通过组名获取组信息  0
+//        StorageServer group1 = getStorages("group1");
+//        System.out.println(group1.getStorePathIndex());
+
+//        // 根据文件组名和文件存储路径获取Storage服务的IP、端口信息
+//        ServerInfo[] serverInfo = getServerInfo("group1", "M00/00/00/rBDrAmBA3M2AectpAAO1WLzWet8743.jpg");
+//        for (ServerInfo info : serverInfo) {
+//            System.out.println(info.getIpAddr() + ": " + info.getPort()); // 172.16.235.2: 23000
+//        }
+
+//        // 获取Tracker服务地址
+//        System.out.println(getTrackerUrl()); // 172.16.235.2:8080
+    }
 }
