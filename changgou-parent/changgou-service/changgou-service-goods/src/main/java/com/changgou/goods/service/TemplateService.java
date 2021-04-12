@@ -5,7 +5,19 @@ import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
+/****
+ * @Author:shenkunlin
+ * @Description:Template业务层接口
+ * @Date 2019/6/14 0:16
+ *****/
 public interface TemplateService {
+    /**
+     * 根据分类id查询模板信息
+     * @param id 分类id
+     * @return
+     */
+    Template findByCategoryId(Integer id);
+
     /***
      * Template多条件分页查询
      * @param template
@@ -53,7 +65,7 @@ public interface TemplateService {
      * @param id
      * @return
      */
-    Template findById(Integer id);
+     Template findById(Integer id);
 
     /***
      * 查询所有Template

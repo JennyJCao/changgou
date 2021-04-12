@@ -12,6 +12,11 @@ import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
 
+/****
+ * @Author:shenkunlin
+ * @Description:Album业务层接口实现类
+ * @Date 2019/6/14 0:16
+ *****/
 @Service
 public class AlbumServiceImpl implements AlbumService {
 
@@ -75,19 +80,19 @@ public class AlbumServiceImpl implements AlbumService {
         if(album!=null){
             // 编号
             if(!StringUtils.isEmpty(album.getId())){
-                criteria.andEqualTo("id",album.getId());
+                    criteria.andEqualTo("id",album.getId());
             }
             // 相册名称
             if(!StringUtils.isEmpty(album.getTitle())){
-                criteria.andLike("title","%"+album.getTitle()+"%");
+                    criteria.andLike("title","%"+album.getTitle()+"%");
             }
             // 相册封面
             if(!StringUtils.isEmpty(album.getImage())){
-                criteria.andEqualTo("image",album.getImage());
+                    criteria.andEqualTo("image",album.getImage());
             }
             // 图片列表
             if(!StringUtils.isEmpty(album.getImageItems())){
-                criteria.andEqualTo("imageItems",album.getImageItems());
+                    criteria.andEqualTo("imageItems",album.getImageItems());
             }
         }
         return example;
